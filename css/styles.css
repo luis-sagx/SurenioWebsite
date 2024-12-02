@@ -2,16 +2,58 @@
     margin: 0;
 }
 
-header{
-    background-color: rgb(17, 16, 104);
+body{
+    font-family: Intro, arial, 'Helvetica Neue', Helvetica, Arial, sans-serif, arial;
+}
+
+header {
+    background-color: #6F4E37;
     color: aliceblue;
-    text-align: center;
-    padding: 20px;
+    padding: 10px 20px; 
+}
+
+.header{
+    margin: 0 auto;
+    width: 75%;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Distribuye el contenido entre los extremos */
+}
+
+.mark {
+    display: flex; 
+    align-items: center; /* Centra verticalmente los elementos dentro de .mark */
+}
+
+.mark img {
+    width: 100px;
+    border-radius: 45%;
+    position: absolute; /* Alinea el logo independientemente del flexbox */
+    margin-top: 3rem;
+}
+
+.mark h1 {
+    font-style: italic; 
+    font-family: "Pacifico";
+    font-size: 30px;
+    margin-left: 120px;
+}
+
+.options {
+    display: flex; 
+    align-items: center; 
+    gap: 15px; /* Espacio entre los íconos */
+}
+
+.options img {
+    width: 30px; /* Tamaño de los íconos */
+    height: auto;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
 nav {
     width: 100%;
-    background-color: rgb(56, 84, 177);
+    background-color: #6F4E37;
     text-align: center;
 }
 
@@ -33,50 +75,4 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #d1d6d7; 
-}
-
-.flex-container {
-    display: flex;
-    margin: 0 auto;
-}
-
-.content{
-    flex-basis: 50%;
-}
-
-.slider-bar{
-    background-color: rgb(254, 232, 217);
-    order: initial;
-    flex-basis: 25%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-aside {
-    position: sticky;
-    top: 20px;
-    flex-basis: 20%;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: 1rem;
-}
-
-article {
-    border: 1px solid black;
-    border-radius: 5px;
-    text-align: center; 
-    padding: 15px;
-    background-color: white;
-    margin: 10px;
-}
-
-.boton{
-    background-color: black;
-    border-radius: 10px;
-    padding: 10px;
 }
