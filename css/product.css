@@ -30,10 +30,47 @@ aside {
 }
 
 article {
-    border: 1px solid black;
-    border-radius: 5px;
-    text-align: center; 
     padding: 15px;
     background-color: white;
     margin: 10px;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: black 0px 0px 5px;
+    margin: auto;
+    height: 350px;
+    width: 250px;
+    transition: box-shadow 0.5s;
+    border-radius: 5px;
+}
+
+.card-header{
+    height: 200px;
+    background-image: url(../images/header.png);
+}
+
+.card:hover{
+    box-shadow: rgb(88, 64, 54) 0px 0px 25px;
+}
+
+.card:hover img{
+    transform: scaleX(-1);
+}
+
+.card-body{
+    height: 150px;
+    padding: 10px;
+}
+
+.card-body h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.card-body p{
+    padding: 10px;
+    text-align: center;
 }
