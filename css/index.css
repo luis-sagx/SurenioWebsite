@@ -1,0 +1,51 @@
+.licor {
+    padding: 100px;
+    background-color: #ECB176;
+    position: relative;
+}
+
+.licor-content {
+    text-align: center;
+}
+
+.licor-content h2 {
+   font-size: 55px;
+   line-height: 70px;
+   color: #9B3922;
+   text-transform: uppercase;
+   padding: 0 250px;
+   margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #0C0C0C;
+    padding: 0 250px;
+    margin-bottom: 35px;
+ }
+
+ .licor-group {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+ }
+
+ .licor-1 {
+    padding: 0 25px;
+ }
+ 
+ .licor-1 img {
+    width: 200px;
+ }
+ 
+ .licor-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+ 
+ .licor-1 h3 {
+    color: #9B3922;
+    font-size: 20px;
+    margin-bottom: 15px;
+ }
