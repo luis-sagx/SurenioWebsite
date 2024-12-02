@@ -7,8 +7,8 @@ body{
 }
 
 header {
-    background-color: #6F4E37;
-    color: aliceblue;
+    background-color: white;
+    color: #6F4E37;
     padding: 10px 20px; 
 }
 
@@ -42,13 +42,13 @@ header {
 .options {
     display: flex; 
     align-items: center; 
-    gap: 15px; /* Espacio entre los íconos */
 }
 
-.options img {
-    width: 30px; /* Tamaño de los íconos */
+.options i {
+    width: 70px; 
     height: auto;
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    cursor: pointer;
+    color: #6F4E37;
 }
 
 nav {
