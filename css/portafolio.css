@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A66E38;
+}
+
+/*Header*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.mark {
+    display: flex; 
+    align-items: center;
+}
+
+.mark img {
+    width: 100px;
+    position: absolute; /* Alinea el logo independientemente del flexbox */
+    margin-top: 3rem;
+    padding: 2px;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: rgb(252, 249, 242);
+}
+
+.mark h1 {
+    font-style: italic; 
+    font-family: "Pacifico";
+    font-size: 30px;
+    margin-left: 120px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #0C0C0C;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color: #481E14;
+
+}
+/*Header*/
+
+/*Seccion*/
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;   
+}
+
+.home-content {
+    background-color: transparent;
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFEEAD;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.btn-1 a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #FFEEAD;
+    border: 2px solid #481E14;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #0C0C0C;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-1 a:nth-child(2) {
+    background: transparent;
+    color: #0C0C0C;
+}
+
+.btn-1 a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #9B3922;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-1 a:hover::before {
+    width: 100%;
+}
+/*Seccion*/
