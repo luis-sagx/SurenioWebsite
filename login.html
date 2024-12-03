@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="form-box">
+            <div class="bottom-box">
+                <div id="elegir"> </div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
+                <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/?locale=es_ES%2F"><i class="fa-brands fa-facebook fa-3x facebook"></i></a>
+                <a href="https://accounts.google.com/AccountChooser/signinchooser?service=CPanel&continue=https%3A%2F%2Fadmin.google.com%2Fctech.mx%2FDashboard&hl=es&ddm=1&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i class="fa-brands fa-google fa-3x google"></i></a>
+                <a href="https://github.com/login"><i class="fa-brands fa-github fa-3x black"></i></a>
+            </div>
+            <form id="login"class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box" > <span>Recordar Contraseña</span>
+                <button type="submit" class="submit-btn">Acceder</button>
+            </form>
+
+            <form id="registrar" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo Electrónico" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box" > <span>Acepto los Terminos y Condiciones</span>
+                <button type="submit" class="submit-btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function login(){
+            x.style.left="50px"
+            y.style.left="450px"
+            z.style.left="0px"
+        }
+
+        function registrar(){
+            x.style.left="-400px"
+            y.style.left="50px"
+            z.style.left="120px"
+        }
+    </script>
 </body>
 </html>
