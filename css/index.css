@@ -140,17 +140,23 @@
 
  /*botones*/
  .btn-1 {
-   display: inline-block;
-   padding: 11px 35px;
-   background-color: #FFEEAD;
-   color: #0C0C0C;
-   text-transform: uppercase;
-   border-radius: 5px;
-   border: none;
-   cursor: pointer;
+  padding: 10px 20px;
+  background-color: #8a5431;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
  }
 
  .btn-1:hover {
-   background-color: #EC823A;
+    background-color: #fc894f;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.7); 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
  }
  /*botones*/
