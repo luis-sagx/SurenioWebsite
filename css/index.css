@@ -1,3 +1,4 @@
+/*Seccion 1*/
 .licor {
     padding: 100px;
     background-color: #ECB176;
@@ -49,3 +50,90 @@
     font-size: 20px;
     margin-bottom: 15px;
  }
+ /*Seccion 1*/
+
+ /*Main*/
+ .services {
+   background-image: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)),
+      url('../images/Fondo-main.webp');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed; /**hace que la imagen no se mueva*/
+      padding: 100px 0;
+ }
+
+ .services-content {
+   text-align: center;
+ }
+
+ .services-content h2 {
+   font-size: 55px;
+   line-height: 70px;
+   color: #9B3922;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+ }
+
+ .services-content p {
+   font-size: 16px;
+   color: #FFEEAD;
+   margin-bottom: 50px;
+   padding: 0 100px;
+ }
+
+ .services-group {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+ }
+
+ .services-1 {
+   padding: 0 100px;
+ }
+
+ .services-1 img {
+   width: 25px;
+   margin-bottom: 15px;
+ }
+
+ .services-1 h3 {
+   color: #9B3922;
+   font-size: 18px;
+ }
+ /*Main*/
+
+ /*Seccion 2*/
+ .blog {
+   padding: 100px 0;
+   text-align: center;
+   background-color: #ECB176;
+ }
+
+ .blog-content {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .blog-1 {
+   padding: 15px 55px;
+ }
+
+ .blog-1 img {
+   width: 250px;
+   border-radius: 15px;
+   margin-bottom: 15px;
+ }
+
+.blog h2 {
+   font-size: 45px;
+   color: #9B3922;
+}
+
+ .blog-1 h3 {
+   font-size: 25px;
+   color: #9B3922;
+ }
+ /*Seccion 2*/
