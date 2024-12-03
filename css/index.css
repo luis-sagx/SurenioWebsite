@@ -137,3 +137,42 @@
    color: #9B3922;
  }
  /*Seccion 2*/
+
+ /*Footer*/
+ footer {
+   text-align: center;
+   padding: 20px;
+   background-color: #A67B5B;
+   color: #9B3922;
+ }
+
+ footer h3, footer h4 {
+   margin-bottom: 10px;
+ }
+
+ footer p {
+   color: #0C0C0C;
+ }
+
+ footer .social-icons img {
+   width: 40px;
+   margin: 0 5px;
+ }
+ /*Footer*/
+
+ /*botones*/
+ .btn-1 {
+   display: inline-block;
+   padding: 11px 35px;
+   background-color: #FFEEAD;
+   color: #0C0C0C;
+   text-transform: uppercase;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+ }
+
+ .btn-1:hover {
+   background-color: #EC823A;
+ }
+ /*botones*/
