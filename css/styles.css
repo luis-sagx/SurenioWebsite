@@ -7,8 +7,8 @@ body{
 }
 
 header {
-    background-color: white;
-    color: #6F4E37;
+    background-color: rgb(252, 249, 242);
+    color: #76553d;
     padding: 10px 20px; 
 }
 
@@ -27,9 +27,12 @@ header {
 
 .mark img {
     width: 100px;
-    border-radius: 45%;
     position: absolute; /* Alinea el logo independientemente del flexbox */
     margin-top: 3rem;
+    padding: 2px;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: rgb(252, 249, 242);
 }
 
 .mark h1 {
@@ -53,7 +56,7 @@ header {
 
 nav {
     width: 100%;
-    background-color: #6F4E37;
+    background-color: #835333;
     text-align: center;
 }
 
@@ -70,9 +73,30 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; 
-    color: white; 
+    color: white;
+    font-weight: bold; 
 }
 
 nav ul li a:hover {
     color: #d1d6d7; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #A67B5B;
+    color: #9B3922;
+}
+
+footer h3, footer h4 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #0C0C0C;
+}
+
+footer .social-icons img {
+    width: 40px;
+    margin: 0 5px;
 }

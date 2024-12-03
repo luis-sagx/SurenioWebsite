@@ -1,37 +1,74 @@
+.container{
+    background-color: rgb(252, 249, 242);
+}
+
 .flex-container {
     display: flex;
     margin: 0 auto;
 }
 
 .content{
-    flex-basis: 50%;
+    flex-basis: 60%;
+}
+
+.content h2{
+    margin: 2rem;
 }
 
 .slider-bar{
-    background-color: rgb(254, 232, 217);
     order: initial;
-    flex-basis: 25%;
-    color: white;
+    flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: 2px solid #967259;
+    margin-top: 2rem;
 }
+
+.slider-bar p {
+    padding: 7px;
+    border-radius: 5px;
+    width: 8rem;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #8a5431;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.slider-bar a {
+    list-style: none;
+    text-decoration: none; 
+    color: white; 
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.slider-bar p:hover {
+    background-color: #fc894f; 
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.7); 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
 
 aside {
     position: sticky;
     top: 20px;
     flex-basis: 20%;
-    background-color: #afe1ca;
-    border: 1px solid #ddd;
+    background-color: #fdeec7;
+    border: 1px solid #ffc175;
     padding: 15px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: 1rem;
+    margin-top: 1rem;
+    height: 500px;
 }
 
 article {
     padding: 15px;
-    background-color: white;
     margin: 10px;
     display: flex;
 }
@@ -39,38 +76,97 @@ article {
 .card {
     display: flex;
     flex-direction: column;
-    box-shadow: black 0px 0px 5px;
+    box-shadow: rgb(137, 84, 46) 0px 0px 5px;
     margin: auto;
-    height: 350px;
+    height: 450px;
     width: 250px;
     transition: box-shadow 0.5s;
     border-radius: 5px;
 }
 
-.card-header{
-    height: 200px;
+.card-header {
+    height: 300px;
     background-image: url(../images/header.png);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+    position: relative; /* Necesario para efectos como opacidad */
 }
+
+@keyframes animateLiquorCard {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1) rotate(15deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.card:hover .card-header {
+    animation: animateLiquorCard 1s ;
+}
+
 
 .card:hover{
-    box-shadow: rgb(88, 64, 54) 0px 0px 25px;
+    box-shadow: rgb(171, 100, 50) 0px 0px 25px;
 }
 
-.card:hover img{
-    transform: scaleX(-1);
-}
-
-.card-body{
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
     height: 150px;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff7f1;
+    border-top: 2px solid #967259;
+    border-radius: 0 0 5px 5px;
 }
 
-.card-body h3{
-    padding: 10px;
-    text-align: center;
+.liquor-name {
+    font-size: 1.5rem;
+    color: #6b4226;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 5px;
 }
 
-.card-body p{
-    padding: 10px;
-    text-align: center;
+.liquor-details {
+    font-size: 1rem;
+    color: #967259;
+    margin: 2px 0;
 }
+
+.liquor-price {
+    font-size: 1.2rem;
+    color: #6b4226;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #8a5431;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #fc894f;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.7); 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+

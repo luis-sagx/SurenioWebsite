@@ -138,28 +138,6 @@
  }
  /*Seccion 2*/
 
- /*Footer*/
- footer {
-   text-align: center;
-   padding: 20px;
-   background-color: #A67B5B;
-   color: #9B3922;
- }
-
- footer h3, footer h4 {
-   margin-bottom: 10px;
- }
-
- footer p {
-   color: #0C0C0C;
- }
-
- footer .social-icons img {
-   width: 40px;
-   margin: 0 5px;
- }
- /*Footer*/
-
  /*botones*/
  .btn-1 {
    display: inline-block;

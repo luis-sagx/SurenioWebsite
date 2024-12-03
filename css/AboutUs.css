@@ -1,0 +1,45 @@
+.content {
+    margin: 0 auto;
+    text-align: center; /* Centra texto y elementos en el contenedor */
+}
+
+.phrase-container {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), 
+    url('../images/Fondo-main.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%; 
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.phrase-info {
+    width: 70%;
+    color: white; 
+    text-align: center;
+}
+
+.history {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 70%; 
+    margin: 0 auto;
+}
+
+.history img {
+    max-width: 40%; 
+    height: auto; 
+}
+
+.history .information {
+    max-width: 50%; 
+    text-align: left; 
+}
