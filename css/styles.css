@@ -1,22 +1,87 @@
-*{
+* {
     margin: 0;
+    padding: 0;
 }
 
-body{
-    font-family: Intro, arial, 'Helvetica Neue', Helvetica, Arial, sans-serif, arial;
+:root {
+    --bg-color: white;
+    --text-color: #4E342E;
+    --header-bg: white;
+    --nav-bg: #6b4c38;
+    --link-color: white;
+    --hover-link-color: #d1d6d7;
+    --icon-color: #6F4E37;
+    --i-color: #6F4E37;
+}
+
+body:has(#dark-mode-toggle:checked) {
+    --bg-color: #1E1E1E;
+    --text-color: #F5F5F5;
+    --header-bg: #2b2a2a;
+    --nav-bg: #6b4c38;
+    --link-color: #F5F5F5;
+    --hover-link-color: #FFCC99;
+    --i-color: #fff7ee;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-    background-color: white;
-    color: #76553d;
-    padding: 10px 20px; 
+    background-color: var(--header-bg);
+    padding: 10px 20px;
 }
+
+nav {
+    background-color: var(--nav-bg);
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--hover-link-color);
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.theme-toggle input {
+    display: none;
+}
+
+.theme-toggle i {
+    color: var(--icon-color);
+    transition: color 0.3s;
+}
+
 
 p {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
 }
-
 
 .header{
     margin: 0 auto;
@@ -55,55 +120,29 @@ p {
 
 .options i {
     width: 70px; 
-    height: auto;
+    color: var(--i-color);
+    transition: color 0.3s;
     cursor: pointer;
-    color: #6F4E37;
-}
-
-nav {
-    width: 100%;
-    background-color: #835333;
-    text-align: center;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    justify-content: center;
-    font-family: 'Lora', serif;
-}
-
-nav ul li {
-    padding: 1rem;
-}
-
-nav ul li a {
-    text-decoration: none; 
-    color: white;
-    font-weight: bold; 
-}
-
-nav ul li a:hover {
-    color: #d1d6d7; 
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #A67B5B;
-    color: #9B3922;
+    background-color:  #6b4c38;
+    color: white;
 }
 
 footer h3, footer h4 {
-    margin-bottom: 10px;
+    margin: 1rem;
 }
 
 footer p {
-    color: #0C0C0C;
+    color: rgb(255, 252, 246);
 }
 
 footer .social-icons img {
     width: 40px;
     margin: 0 5px;
+    background-color: #fffdf3;
+    border-radius: 5px;
 }

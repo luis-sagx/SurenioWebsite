@@ -1,6 +1,16 @@
+:root {
+    --seccion-bg: #fbeed8;
+    --h-color:#d97742;
+}
+
+body:has(#dark-mode-toggle:checked) {
+    --seccion-bg: rgb(111, 76, 54);
+    --h-color:#ffede3;
+}
+
 .content {
     margin: 0 auto;
-    text-align: center; /* Centra texto y elementos en el contenedor */
+    text-align: center; 
 }
 
 .phrase-container {
@@ -49,7 +59,7 @@
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #d97742; /* Naranja cálido */
+    color: var(--h-color);
 }
 
 p{
@@ -72,7 +82,7 @@ p{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
-    ), url('../images/header.png'); 
+    ), url('../images/Fondo-main.webp'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +99,7 @@ p{
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    background-color: #fbeed8;
+    background-color: var(--seccion-bg);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
