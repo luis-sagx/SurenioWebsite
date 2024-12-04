@@ -94,6 +94,8 @@
     outline: none;
     display: block;
     margin: auto;
+    text-decoration: none;
+    text-align: center;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
@@ -108,7 +110,7 @@
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 .check-box {
-    margin: 30px 10px 30px 0;
+    margin: 20px 10px 28px 0;
 }
 span{
     color:#616351 ;
@@ -118,7 +120,7 @@ span{
 }
 #login {
     left: 50px;
-    border-top: 15px;
+    top: 190px;
 }
 #registrar {
     left: 450px;
