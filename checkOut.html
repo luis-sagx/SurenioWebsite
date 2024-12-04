@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/checkOut.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header">
+            <div class="mark">
+                <img src="./images/logo.png" alt="logo">
+                <h1>Sureño</h1>
+            </div>
+            <div class="options">
+                <a href="login.html">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </a>
+                <a href="shopping.html">
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                </a>
+                <a href="setting.html">
+                    <i class="fa-solid fa-gear fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="aboutUs.html">Quienes Somos</a></li>
+            <li><a href="product.html">Productos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="cardCheckOut">
+    <section class="datos">
+        <h2>Información Personal</h2>
+        <form id="formcheck" action="submit" method="post">
+            <label for="Nombres_Cliente">Nombres:</label>
+            <br>
+            <input type="text" id="txtNombre" placeholder="Nombres">
+            <br>
+            <label for="Apellidos_Cliente">Apellidos:</label>
+            <br>
+            <input type="text" id="txtApellido" placeholder="Apellidos">
+            <br>
+            <label for="Email_Cliente">Email:</label>
+            <br>
+            <input type="email" id="emailCliente" placeholder="email">
+            <br>
+            <label for="Nombres_Cliente">Dirección</label>
+            <br>
+            <input type="text" id="txtDireccion" placeholder="Dirección">
+            <br>
+            <label for="Nombres_Cliente">Codigo Postal</label>
+            <br>
+            <input type="text" id="txtCodigo" placeholder="Codigo Postal">
+            <br>
+        </form>
+    </section>
+
+    <section class="pago">
+        <h2>Pago</h2>
+        <label for="Tarjetas">Tarjetas Aceptadas</label>
+        <article class="tarjetas">
+            <img src="../SurenioWebsite/images/PayPal.jpg" alt="paypal">
+            <img src="../SurenioWebsite/images/MasterCard.png" alt="MasterCard">
+            <img src="../SurenioWebsite/images/American_Express.png" alt="AmericanExpress">
+            <img src="../SurenioWebsite/images/visa.png" alt="visa">
+        </article>
+        <form id="formcheck" action="submit" method="post">
+            <label for="Nombres_tarjeta">Nombre de Tarjeta:</label>
+            <br>
+            <input type="text" id="txtTarjet" placeholder="Tarjeta">
+            <br>
+            <label for="Apellidos_Cliente">Número de Tarjeta:</label>
+            <br>
+            <input type="text" id="txtApellido" placeholder="Apellidos">
+            <br>
+            <label for="Email_Cliente">Fecha expedición:</label>
+            <br>
+            <input type="text" id="fechaE" placeholder="MM/AA" maxlength="5" pattern="^(0[1-9]|1[0-2])\/\d{2}$" required>
+            <br>
+            <label for="Nombres_Cliente">CVV</label>
+            <br>
+            <input type="text" id="txtCVV" placeholder="3-4 digitos" maxlength="4">
+            <br>
+        </form>
+
+    </section>
+</div>
+
+
+<footer>
+    <h3>Sobre Nosotros</h3>
+    <p>Somos una tienda virtual dedicada a ofrecer licores de alta calidad a precios competitivos.</p>
+    <h4>Síguenos</h4>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/"><img src="./images/fb.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="./images/ig.svg" alt="Instagram"></a>
+        <a href="https://web.whatsapp.com/"><img src="./images/wtsp.svg" alt="WhatsApp"></a>
+    </div>
+</footer>
+</body>
+</html>

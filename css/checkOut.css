@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+.container{
+    background-color: rgb(252, 249, 242);
+    width: 100%;
+}
+
+.cardCheckOut{
+    width: 700px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border: solid 2px black;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+.tarjetas{
+    padding: 0;
+}
+.tarjetas img {
+    width: 20px;
+    height: 15px;
+    margin: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+label  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 3% ;
+}
+#formcheck input {
+    margin: 0.6rem;
+}
