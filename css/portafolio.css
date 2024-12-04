@@ -62,14 +62,19 @@ body {
 /*Seccion*/
 .home {
     height: 100vh;
+    background: url('../images/Eduardo.png') no-repeat;
+    background-size: contain;
+    background-position: right center;
     display: flex;
     align-items: center;
     padding: 0 10%;   
+    margin-right: 200px;
 }
 
 .home-content {
     background-color: transparent;
     max-width: 600px;
+    margin-right: auto;
 }
 
 .home-content h1 {
