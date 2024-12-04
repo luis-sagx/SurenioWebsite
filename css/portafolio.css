@@ -9,7 +9,7 @@ body {
 }
 
 /*Header*/
-.header {
+/* .header {
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ body {
 
 .mark img {
     width: 100px;
-    position: absolute; /* Alinea el logo independientemente del flexbox */
+    position: absolute; 
     margin-top: 3rem;
     padding: 2px;
     border-radius: 50%;
@@ -56,8 +56,7 @@ body {
 .navbar a:hover ,
 .navbar a.active{
     color: #481E14;
-
-}
+} */
 /*Header*/
 
 /*Seccion*/
@@ -115,11 +114,24 @@ body {
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
+    transition: .5s;
+}
+
+.btn-1 a:hover {
+    color: #96CEB4;
 }
 
 .btn-1 a:nth-child(2) {
     background: transparent;
     color: #0C0C0C;
+}
+
+.btn-1 a:nth-child(2):hover {
+    color: #96CEB4;
+}
+
+.btn-1 a:nth-child(2)::before{
+    background: #9B3922;
 }
 
 .btn-1 a::before {
@@ -136,5 +148,52 @@ body {
 
 .btn-1 a:hover::before {
     width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 10px;
+    width: 170px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #481E14;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #96CEB4;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #9B3922;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover:before {
+    width: 100%;
+}
+
+.home-sci a:hover {
+    color: #96CEB4;
 }
 /*Seccion*/
