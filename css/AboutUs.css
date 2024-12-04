@@ -26,20 +26,80 @@
     text-align: center;
 }
 
-.history {
-    display: flex;
-    justify-content: center; 
+#aboutUs h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#aboutUs p {
+    margin: 15px 0;
+}
+
+#aboutUs img {
+    max-width: 50%;
+}
+
+.section {
+    margin: 50px auto ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fbeed8;
+}
+
+.section h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #d97742; /* Naranja cálido */
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.section ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+}
+
+.section.show-products {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url('../images/header.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%; 
+    padding: 100px 0;
+    justify-content: center;
     align-items: center; 
-    width: 70%; 
+    color: #fff;
+    padding: 3rem ;
+}
+
+.history, .valors {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #fbeed8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUs-information {
+    flex: 1; 
+    justify-content: center; 
+}
+
+.center-information{
     margin: 0 auto;
-}
-
-.history img {
-    max-width: 40%; 
-    height: auto; 
-}
-
-.history .information {
-    max-width: 50%; 
-    text-align: left; 
+    max-width: 70%;
+    text-align: center;
 }
