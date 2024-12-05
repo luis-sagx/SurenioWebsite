@@ -10,7 +10,7 @@
 .home {
     width: 100%;
     min-height: 100vh;
-    background: #FED8B1;
+    background: #A67B5B;
     display: flex;
     align-items: center;
     gap: 7em;
@@ -21,14 +21,17 @@
 }
 .home-content h3 {
     font-size: 42px;
+    color: #0C0C0C;
 }
 .home-content h1 {
     font-size: 62px;
     line-height: 1.2;
+    color: #0C0C0C;
 }
 .home-content p {
     font-size: 18px;
     margin: 25px 0 30px;
+    color: #0C0C0C;
 }
 .btn-box {
     width: 345px;
@@ -52,22 +55,6 @@
     color: #96CEB4;
     border: 2px solid #9B3922;
 }
-.btn-2 {
-    padding: 15px 28px;
-    background-color: orangered;
-    color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-.btn-2:hover {
-    background-color: white;
-    color: orangered;
-}
 .img-box img {
     border-radius: 50%;
     width: 400px;
@@ -77,7 +64,7 @@
 .home1 {
     width: 100%;
     min-height: 100vh;
-    background: #FFAD60;
+    background: #FED8B1;
     display: flex;
     align-items: center;
     gap: 7em;
@@ -90,14 +77,17 @@
 }
 .home-content1 h3 {
     font-size: 42px;
+    color: #0C0C0C;
 }
 .home-content1 h1 {
     font-size: 62px;
     line-height: 1.2;
+    color: #0C0C0C;
 }
 .home-content1 p {
     font-size: 18px;
     margin: 25px 0 30px;
+    color: #0C0C0C;
 }
 .btn-box1 {
     width: 345px;
@@ -121,22 +111,6 @@
     color: #96CEB4;
     border: 2px solid #9B3922;
 }
-.btn-2 {
-    padding: 15px 28px;
-    background-color: orangered;
-    color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-.btn-2:hover {
-    background-color: white;
-    color: orangered;
-}
 .img-box1 img {
     border-radius: 50%;
     width: 400px;
@@ -157,14 +131,17 @@
 }
 .home-content2 h3 {
     font-size: 42px;
+    color: #0C0C0C;
 }
 .home-content2 h1 {
     font-size: 62px;
     line-height: 1.2;
+    color: #0C0C0C;
 }
 .home-content2 p {
     font-size: 18px;
     margin: 25px 0 30px;
+    color: #0C0C0C;
 }
 .btn-box2 {
     width: 345px;
@@ -187,22 +164,6 @@
     background-color: #9B3922;
     color: #96CEB4;
     border: 2px solid #9B3922;
-}
-.btn-2 {
-    padding: 15px 28px;
-    background-color: orangered;
-    color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-.btn-2:hover {
-    background-color: white;
-    color: orangered;
 }
 .img-box2 img {
     border-radius: 50%;
