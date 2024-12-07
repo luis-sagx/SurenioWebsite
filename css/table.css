@@ -1,0 +1,70 @@
+:root {
+    --table-bg: #fff5e3;
+    --th-color: #f57b3a; 
+    --table-border: #ffaf3e; 
+    --row-hover-bg: #ffd19f; 
+    --text-general: black; 
+    --th-bg: #ffe7c3;
+}
+
+body:has(#dark-mode-toggle:checked) {
+    --table-bg: rgb(129, 99, 79);
+    --th-color: rgb(255, 221, 202); 
+    --table-border: rgb(255, 244, 217);
+    --row-hover-bg: rgb(99, 70, 52); 
+    --text-general: rgb(255, 242, 231); 
+    --th-bg: rgb(93, 65, 46);
+}
+
+.stock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    height: 450px;
+    
+}
+
+table {
+    text-align: center;
+    height: 300px;
+    margin-top: 1rem;
+    width: 70%;
+    background-color: var(--table-bg);
+    color: var(--text-general);
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+thead {
+    border-bottom: 2px solid var(--table-border);
+    color: var(--th-color);
+}
+
+thead th {
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: var(--th-bg);
+}
+
+tbody tr {
+    border-bottom: 2px solid var(--table-border);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: var(--row-hover-bg); /* Fondo al pasar el cursor */
+    color: var(--text-general); /* Asegura legibilidad */
+}
+
+tbody td {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.stock-title {
+    font-style: italic; 
+    font-family: "Pacifico";
+    font-size: 30px;
+}

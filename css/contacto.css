@@ -108,7 +108,9 @@ body {
     padding: 14px 15px;
 }
 .inputBox ::placeholder {
-    color: #FFB38E;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    color: #4b3c3571;
 }
 /*Formulario*/
 /*Info*/

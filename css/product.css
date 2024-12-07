@@ -3,14 +3,15 @@
     --text-color: #4E342E;
     --link-color: white;
     --hover-link-color: #d1d6d7;
-    --article-bg: #fdc887; /* Fondo de article en modo claro */
+    --article-bg: #fdc887; 
     --article-hover-bg: #FFC175;
-    --article2-bg: #82cbd4; /* Fondo de article en modo claro */
+    --article2-bg: #82cbd4;
     --article2-hover-bg: #6DC5D1;
-    --aside-bg: rgb(255, 247, 236); /* Fondo del aside en modo claro */
-    --container-bg: white; /* Fondo del container en modo claro */
+    --aside-bg: rgb(255, 247, 236);
+    --container-bg: white; 
     --p-color: #4E342E;
     --h3-color: #6b4226;
+    --aside-text-bg: rgba(153, 42, 42, 0.05);
 }
 
 body:has(#dark-mode-toggle:checked) {
@@ -18,15 +19,16 @@ body:has(#dark-mode-toggle:checked) {
     --text-color: #F5F5F5;
     --link-color: #F5F5F5;
     --hover-link-color: #FFCC99;
-    --icon-color: #FFCC99; /* Color de los íconos en modo oscuro */
-    --article-bg: rgb(111, 76, 54); /* Fondo de article en modo oscuro */
-    --article-hover-bg: rgb(94, 65, 47);
-    --article2-bg: #3b7e87; /* Fondo de article en modo claro */
-    --article2-hover-bg: #2a636a;
-    --aside-bg: #2e2e2e; /* Fondo del aside en modo oscuro */
-    --container-bg: #333333; /* Fondo del container en modo oscuro */
+    --icon-color: #FFCC99;
+    --article-bg: rgb(95, 68, 52);
+    --article-hover-bg: rgb(90, 65, 51);
+    --article2-bg: #2e5c63; 
+    --article2-hover-bg: #285960;
+    --aside-bg: #2e2e2e; 
+    --container-bg: #333333; 
     --p-color: white;
     --h3-color: rgb(255, 245, 235);
+    --aside-text-bg: rgba(234, 228, 224, 0.307);
 }
 
 body {
@@ -99,7 +101,7 @@ aside {
     border-radius: 10px;
     margin-left: auto;
     margin-right: 1rem;
-    height: 500px;
+    height: 370px;
 }
 
 article {
@@ -144,14 +146,14 @@ article:hover {
     display: flex;
     flex-direction: column;
     margin: 0 10px 10px 0;
-    height: 470px;
-    width: 300px;
+    height: 450px;
+    width: 270px;
     transition: box-shadow 0.5s;
-    background-color: #fbeed8;
 }
 
 .card-header {
-    height: 330px;
+    background-color: #fff6e8;
+    height: 320px;
     transition: transform 0.5s;
     position: relative; /* Necesario para efectos como opacidad */
     border-radius: 5px 5px 0 0;
@@ -181,7 +183,7 @@ article:hover {
     background-position: center;
 }
 
-.card:hover .card-header {
+.card:hover .card-header{
     animation: animateLiquorCard 1s ;
 }
 
@@ -190,7 +192,8 @@ article:hover {
 }
 
 .card-body {
-    height: 140px;
+    background-color: #f7dcae;
+    height: 130px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -238,13 +241,50 @@ article:hover {
 }
 
 .second-button{
-    background-color: #3b7e87;
+    background-color: #408791;
 }
 
 .second-button:hover{
     background-color: #00b1c9;
-    box-shadow: 0 0 10px #00707e; 
+    box-shadow: 0 0 5px #00707e; 
 }
+
+.stock-button{
+    list-style: none;
+    text-decoration: none; 
+    color: white; 
+}
+
+.aside-preguntas h2 {
+    font-size: 1.5rem;
+    color: var(--h3-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.faq-content {
+    font-size: 0.9rem;
+    color: var(--p-color);
+    margin-top: 5px;
+    text-align: justify;
+    padding: 5px;
+    background-color: var(--aside-text-bg);
+    border-radius: 5px;
+}
+
 
 @keyframes animateLiquorCard {
     0% {
