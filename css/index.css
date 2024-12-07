@@ -105,6 +105,8 @@ body {
  
  .licor-1 img {
     width: 200px;
+    border-radius: 15%;
+    border-image: black;
  }
  
  .licor-img {
@@ -123,9 +125,9 @@ body {
  /*Main*/
  .services {
    background-image: linear-gradient(
-      rgba(0,0,0,0.7),
-      rgba(0,0,0,0.7)),
-      url('../images/Fondo-main.webp');
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)),
+      url('../images/bar2.jpg');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
