@@ -37,7 +37,7 @@ body {
 }
 
 .container{
-    background-color: var(--container-bg); /* Color del container */
+    background-color: var(--container-bg); 
 }
 
 .flex-container {
@@ -160,25 +160,25 @@ article:hover {
 }
 
 .vino-header {
-    background-image: url('../images/logo.jpg');
+    background-image: url('../images/vino.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .vodka-header {
-    background-image: url('../images/logo.png');
+    background-image: url('../images/vodka.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .whisky-header {
-    background-image: url('../images/whisky.png');
+    background-image: url('../images/whiskyRed.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .aguardiente-header {
-    background-image: url('../images/aguardiente.png');
+    background-image: url('../images/aguardiente.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -223,7 +223,7 @@ article:hover {
 .buy-button {
     font-family: 'Lora', serif;
     padding: 10px 20px;
-    background-color: #8a5431;
+    background-color: #906243;
     color: white;
     border: none;
     border-radius: 5px;
