@@ -35,6 +35,7 @@
 .card .contenido p {
     line-height: 1.5;
     color: #0C0C0C;
+    text-align: justify;
 }
 .card .contenido h3 {
     font-weight: 400;

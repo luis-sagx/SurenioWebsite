@@ -32,6 +32,7 @@
     font-size: 18px;
     margin: 25px 0 30px;
     color: #0C0C0C;
+    text-align: justify;
 }
 .btn-box {
     width: 345px;
@@ -57,7 +58,8 @@
 }
 .img-box img {
     border-radius: 50%;
-    width: 400px;
+    width: 410px;
+    height: 470px;
 }
 /*Seccion 1*/
 /*SeccionM*/
@@ -88,6 +90,7 @@
     font-size: 18px;
     margin: 25px 0 30px;
     color: #0C0C0C;
+    text-align: justify;
 }
 .btn-box1 {
     width: 345px;
@@ -113,7 +116,8 @@
 }
 .img-box1 img {
     border-radius: 50%;
-    width: 400px;
+    width: 500px;
+    height: 500px;
 }
 /*SeccionM*/
 /*SeccionL*/
@@ -142,6 +146,7 @@
     font-size: 18px;
     margin: 25px 0 30px;
     color: #0C0C0C;
+    text-align: justify;
 }
 .btn-box2 {
     width: 345px;
@@ -167,6 +172,7 @@
 }
 .img-box2 img {
     border-radius: 50%;
-    width: 400px;
+    width: 500px;
+    height: 500px;
 }
 /*SeccionL*/
