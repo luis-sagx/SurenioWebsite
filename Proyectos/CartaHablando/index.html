@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <title>Escribe con tu voz</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="informacion">
+            <h1>¡Crea tu carta hablando!</h1>
+            <textarea id="textArea" cols="30" rows="10" placeholder="Tu carta aparecerá aquí..." readonly></textarea>
+            
+            <!-- Indicador de grabación -->
+            <div class="indicador">
+                <div id="recordingIndicator"></div>
+                <p id="recordingText" style="display: none;">Grabando...</p>
+            </div>
+            
+            <!-- Botones de interacción -->
+            <div class="botones">
+                <div class="boton">
+                    <button id="btnStart" title="Hablar"><img src="img/microfono-de-estudio.png" alt="Hablar"></button>
+                    <p>Hablar</p>
+                </div>
+                <div class="boton">
+                    <button id="btnStop" title="Parar" disabled><img src="img/boton-detener.png" alt="Parar"></button>
+                    <p>Parar</p>
+                </div>
+                <div class="boton">
+                    <button id="btnClear" title="Limpiar" disabled><img src="img/eliminar.png" alt="Limpiar"></button>
+                    <p>Limpiar</p>
+                </div>
+                <div class="boton">
+                    <button id="btnSave" title="Guardar" disabled><img src="img/guardar-el-archivo.png" alt="Guardar"></button>
+                    <p>Guardar</p>
+                </div>
+                <div class="boton">
+                    <button id="btnListen" title="Escuchar" disabled><img src="img/escuchar.png" alt="Escuchar"></button>
+                    <p>Escuchar</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    
+    <!-- Modal de confirmación para borrar -->
+    <div class="modal" id="modalConfirmDelete">
+        <div class="modal-content">
+            <h2>¿Estás seguro de borrar el texto?</h2>
+            <div class="modal-buttons">
+                <button id="btnConfirmDelete">✓</button>
+                <button id="btnCancelDelete">X</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
