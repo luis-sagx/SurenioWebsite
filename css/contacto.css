@@ -1,10 +1,95 @@
+/*Cambio de colores ligh/dark*/
+:root {
+    --bg-color: white;
+    --text-color: #4E342E;
+    --link-color: #6F4E37;
+    --hover-link-color: #7EB5A6;
+    --input-border: #6F4E37;
+    --button-bg: #6F4E37;
+    --button-text: #7EB5A6;
+    --info-bg: #FED8B1;
+    --info-text: #1B1A17;
+    --icon-bg: #7EB5A6;
+    --icon-color: #1B1A17;
+    --form-bg: #96CEB4;
+    --map-bg: #333333;
+}
+
+body:has(#dark-mode-toggle:checked) {
+    --bg-color: #1E1E1E;
+    --text-color: #F5F5F5;
+    --link-color: #FFC175;
+    --hover-link-color: #FFCC99;
+    --input-border: #FFCC99;
+    --button-bg: #FFC175;
+    --button-text: #1E1E1E;
+    --info-bg: #7EB5A6;
+    --info-text: #1E1E1E;
+    --icon-bg: #FFCC99;
+    --icon-color: #1E1E1E;
+    --form-bg: #6F4E37;
+    --map-bg: #4F4F4F;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--hover-link-color);
+}
+/* Formulario del contacto*/
+.contact {
+    background-color: var(--form-bg);
+    border-radius: 15px;
+}
+.contact h3 {
+    color: var(--text-color);
+}
+.inputBox input,
+.inputBox textarea {
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+.inputBox input[type="submit"] {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+/*Seccion Info*/
+.inf {
+    background-color: var(--info-bg);
+    color: var(--info-text);
+}
+.inf .infoBox div span {
+    background-color: var(--icon-bg);
+    color: var(--icon-color);
+}
+.inf .infoBox div p,
+.inf .infoBox div a {
+    color: var(--info-text);
+}
+/*Iconos de redes*/
+.sci li a {
+    color: var(--icon-bg);
+}
+.sci li a:hover {
+    color: var(--icon-color);
+}
+/*Mapa*/
+.map {
+    background-color: var(--map-bg);
+}
+.map iframe {
+    background-color: var(--map-bg);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    background: linear-gradient();
 }
 .contactUs {
     position: relative;
