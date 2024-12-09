@@ -11,7 +11,7 @@
     --info-text: #1B1A17;
     --icon-bg: #7EB5A6;
     --icon-color: #1B1A17;
-    --form-bg: #96CEB4;
+    --form-bg: #82cbd4;
     --map-bg: #333333;
 }
 
@@ -27,7 +27,7 @@ body:has(#dark-mode-toggle:checked) {
     --info-text: #1E1E1E;
     --icon-bg: #FFCC99;
     --icon-color: #1E1E1E;
-    --form-bg: #6F4E37;
+    --form-bg: #73bec8;
     --map-bg: #4F4F4F;
 }
 .container {
@@ -50,6 +50,7 @@ a:hover {
 .contact {
     background-color: var(--form-bg);
     border-radius: 15px;
+    padding: 40px;
 }
 .contact h3 {
     color: var(--text-color);
@@ -108,8 +109,10 @@ a:hover {
     font-size: 2em;
 }
 .contactUs .title h2 {
-    color: #6F4E37;
+    color: var(--text-color);
     font-weight: 500;
+    font-style: italic; 
+    font-family: "Pacifico";
 }
 .form {
     grid-area: form;
@@ -123,11 +126,7 @@ a:hover {
     grid-area: map;
     border-radius: 15px;
 }
-.contact {
-    padding: 40px;
-    background: #96CEB4;
-    border-radius: 15px;
-}
+
 .box {
     position: relative;
     display: grid;
@@ -200,7 +199,7 @@ a:hover {
 .inputBox ::placeholder {
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.9rem;
-    color: #4b3c3571;
+    color: #af9e969f;
 }
 /*Formulario*/
 /*Info*/
