@@ -5,6 +5,59 @@
     text-decoration: none;
     list-style: none;
 }
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+:root {
+    /* Colores del tema claro */
+    --background-color-home: #A67B5B;
+    --background-color-home1: #FED8B1;
+    --background-color-home2: #A67B5B;
+    --text-color: #0C0C0C;
+    --button-bg-color: #FFEEAD;
+    --button-hover-bg-color: #9B3922;
+    --button-hover-text-color: #96CEB4;
+}
+
+:root.dark-mode {
+    /* Colores del tema oscuro */
+    --background-color-home: #333333;
+    --background-color-home1: #444444;
+    --background-color-home2: #555555;
+    --text-color: #FFFFFF;
+    --button-bg-color: #666666;
+    --button-hover-bg-color: #777777;
+    --button-hover-text-color: #DDDDDD;
+}
+
+/* Aplicar las variables */
+body {
+    color: var(--text-color);
+}
+
+.home {
+    background: var(--background-color-home);
+}
+
+.home1 {
+    background: var(--background-color-home1);
+}
+
+.home2 {
+    background: var(--background-color-home2);
+}
+
+.btn-1 {
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+}
+
+.btn-1:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-hover-text-color);
+}
 
 /*Seccion 1*/
 .home {

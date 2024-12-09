@@ -7,97 +7,101 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/carkit.css">
     <title>Portafolio</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="mark">
-                <img src="./images/logo.png" alt="logo">
-                <h1>Sureño</h1>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="mark">
+                    <img src="./images/logo.png" alt="logo">
+                    <h1>Sureño</h1>
+                </div>
+                <div class="options">
+                    <a href="login.html">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </a>
+                    <a href="carKit.html">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </a>
+                    <div class="theme-toggle">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <label for="dark-mode-toggle">
+                            <div class="bolita"></div>
+                        </label>
+                    </div>                    
+                </div>
             </div>
-            <div class="options">
-                <a href="login.html">
-                    <i class="fa-solid fa-user fa-2x"></i>
-                </a>
-                <a href="shopping.html">
-                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                </a>
-                <label class="theme-toggle">
-                    <input type="checkbox" id="dark-mode-toggle">
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-moon"></i>
-                </label>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutUs.html">Quienes Somos</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="product.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="home">
+            <div class="home-content">
+                <h3>Hola</h3>
+                <h1>Yo soy <span>Eduardo García<br></span>Frontend Developer</h1>
+                <p>
+                    Desarrollador frontend con 3 años de experiencia, especializado 
+                    en React.js y tecnologías relacionadas como Redux, Context API y Hooks. 
+                    Destaca por su habilidad para construir aplicaciones web interactivas y 
+                    escalables con interfaces de usuario modernas y eficientes. Con experiencia 
+                    en integración de API RESTful, diseño responsive utilizando CSS3 y frameworks 
+                    como Tailwind CSS y Bootstrap. Es apasionado por la optimización del rendimiento 
+                    y la experiencia del usuario.
+                </p>
+                <div class="btn-box">
+                    <a href="portafolioproyectosE.html" class="btn-1">Proyectos</a>
+                </div>
             </div>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="aboutUs.html">Quienes Somos</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="product.html">Productos</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <section class="home">
-        <div class="home-content">
-            <h3>Hola</h3>
-            <h1>Yo soy <span>Eduardo García<br></span>Frontend Developer</h1>
-            <p>
-                Desarrollador frontend con 3 años de experiencia, especializado 
-                en React.js y tecnologías relacionadas como Redux, Context API y Hooks. 
-                Destaca por su habilidad para construir aplicaciones web interactivas y 
-                escalables con interfaces de usuario modernas y eficientes. Con experiencia 
-                en integración de API RESTful, diseño responsive utilizando CSS3 y frameworks 
-                como Tailwind CSS y Bootstrap. Es apasionado por la optimización del rendimiento 
-                y la experiencia del usuario.
-            </p>
-            <div class="btn-box">
-                <a href="portafolioproyectosE.html" class="btn-1">Proyectos</a>
+            <div class="img-box">
+                <img src="./images/Eduardo.jpg" alt="">
             </div>
-        </div>
-        <div class="img-box">
-            <img src="./images/Eduardo.jpg" alt="">
-        </div>
-    </section>
-    <section class="home1">
-        <div class="home-content1">
-            <h3>Hola</h3>
-            <h1>Yo soy <span>Mateo Iza<br></span>Frontend Developer</h1>
-            <p>
-                Frontend developer con 5 años de experiencia en la creación de aplicaciones
-                empresariales utilizando Angular. Domina TypeScript y ha implementado soluciones 
-                completas que incluyen formularios dinámicos, comunicación en tiempo real con websockets 
-                y gráficos interactivos. Tiene experiencia trabajando en proyectos ágiles y colaborando 
-                con equipos de backend para entregar productos de alta calidad.
-            </p>
-            <div class="btn-box1">
-                <a href="portafolioproyectosM.html" class="btn-1">Proyectos</a>
+        </section>
+        <section class="home1">
+            <div class="home-content1">
+                <h3>Hola</h3>
+                <h1>Yo soy <span>Mateo Iza<br></span>Frontend Developer</h1>
+                <p>
+                    Frontend developer con 5 años de experiencia en la creación de aplicaciones
+                    empresariales utilizando Angular. Domina TypeScript y ha implementado soluciones 
+                    completas que incluyen formularios dinámicos, comunicación en tiempo real con websockets 
+                    y gráficos interactivos. Tiene experiencia trabajando en proyectos ágiles y colaborando 
+                    con equipos de backend para entregar productos de alta calidad.
+                </p>
+                <div class="btn-box1">
+                    <a href="portafolioproyectosM.html" class="btn-1">Proyectos</a>
+                </div>
             </div>
-        </div>
-        <div class="img-box1">
-            <img src="./images/Mateo.jpg" alt="">
-        </div>
-    </section>
-    <section class="home2">
-        <div class="home-content2">
-            <h3>Hola</h3>
-            <h1>Yo soy <span>Luis Sagnay<br></span>Frontend Developer</h1>
-            <p>
-                Desarrollador frontend con 4 años de experiencia, enfocado en el uso de Vue.js y en la creación 
-                de experiencias visuales atractivas. Combina habilidades técnicas con una fuerte base en diseño 
-                UI/UX, logrando productos que destacan tanto en funcionalidad como en estética. Su conocimiento 
-                incluye herramientas de diseño como Figma y Adobe XD, además de CSS avanzado para animaciones y 
-                transiciones fluidas.
-            </p>
-            <div class="btn-box2">
-                <a href="portafolioproyectosL.html" class="btn-1">Proyectos</a>
+            <div class="img-box1">
+                <img src="./images/Mateo.jpg" alt="">
             </div>
-        </div>
-        <div class="img-box2">
-            <img src="./images/Luis.jpg" alt="">
-        </div>
-    </section>
+        </section>
+        <section class="home2">
+            <div class="home-content2">
+                <h3>Hola</h3>
+                <h1>Yo soy <span>Luis Sagnay<br></span>Frontend Developer</h1>
+                <p>
+                    Desarrollador frontend con 4 años de experiencia, enfocado en el uso de Vue.js y en la creación 
+                    de experiencias visuales atractivas. Combina habilidades técnicas con una fuerte base en diseño 
+                    UI/UX, logrando productos que destacan tanto en funcionalidad como en estética. Su conocimiento 
+                    incluye herramientas de diseño como Figma y Adobe XD, además de CSS avanzado para animaciones y 
+                    transiciones fluidas.
+                </p>
+                <div class="btn-box2">
+                    <a href="portafolioproyectosL.html" class="btn-1">Proyectos</a>
+                </div>
+            </div>
+            <div class="img-box2">
+                <img src="./images/Luis.jpg" alt="">
+            </div>
+        </section>
+    </div>
 </body>
 </html>
