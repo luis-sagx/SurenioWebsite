@@ -27,7 +27,7 @@ body:has(#dark-mode-toggle:checked) {
     --info-text: #1E1E1E;
     --icon-bg: #FFCC99;
     --icon-color: #1E1E1E;
-    --form-bg: #73bec8;
+    --form-bg: #5cb6c2;
     --map-bg: #4F4F4F;
 }
 .container {
@@ -199,7 +199,7 @@ a:hover {
 .inputBox ::placeholder {
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.9rem;
-    color: #af9e969f;
+    color: #bdaea7b3;
 }
 /*Formulario*/
 /*Info*/
