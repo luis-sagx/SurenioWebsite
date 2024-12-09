@@ -2,18 +2,51 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --bg-gradient: linear-gradient(90deg, rgba(111,78,55,1) 3%, rgba(166,110,56,1) 39%, rgba(236,177,118,1) 76%, rgba(254,216,177,1) 99%);
+    --cart-bg: #fbeed8;
+    --box-shadow: rgba(221, 182, 182, 0.2);
+    --text-color: #333;
+    --title-color: #a96c43;
+    --price-color: #fc894f;
+    --button-bg: #a96c43;
+    --button-hover-bg: #fc894f;
+    --input-border: #ddd;
+    --remove-btn: #a96c43;
+    --remove-hover: #fc894f;
+    --switch-background:#ffffff;
+}
+
+/* Modo oscuro */
+body:has(#dark-mode-toggle:checked) {
+    --bg-gradient: linear-gradient(90deg, #3a2c25 3%, #4e3c32 39%, #6b4e3b 76%, #8e6448 99%);
+    --cart-bg: #2b2b2b;
+    --box-shadow: rgba(0, 0, 0, 0.4);
+    --text-color: #e0e0e0;
+    --title-color: #d28b5e;
+    --price-color: #f5a76c;
+    --button-bg: #4e3c32;
+    --button-hover-bg: #d28b5e;
+    --input-border: #444444;
+    --remove-btn: #d28b5e;
+    --remove-hover: #f5a76c;
+    --switch-background:#ffffff;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    background-image: linear-gradient(90deg, rgba(111,78,55,1) 3%, rgba(166,110,56,1) 39%, rgba(236,177,118,1) 76%, rgba(254,216,177,1) 99%);
-    color: #333;
+    background-image: var(--bg-gradient);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    --switch-background:#000000;
 }
 
 .container {
     width: 100%;
+    height: 100%;
     margin: auto;
 }
 
@@ -22,15 +55,15 @@ body {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: #fff7d5;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(221, 182, 182, 0.2);
+    background-color: var(--cart-bg);
+    box-shadow: 0 4px 15px var(--box-shadow);
 }
 
 .cart-box h1 {
     text-align: center;
-    color: #a96c43;
+    color: var(--title-color);
     margin-bottom: 20px;
 }
 
@@ -70,7 +103,7 @@ body {
 
 .item-details h2 {
     font-size: 1.2rem;
-    color: #a96c43;
+    color: var(--title-color);
     margin-bottom: 5px;
 }
 
@@ -83,7 +116,7 @@ body {
 .price {
     font-weight: bold;
     font-size: 1rem;
-    color: #fc894f;
+    color: var(--price-color);
 }
 
 .quantity-box {
@@ -93,7 +126,7 @@ body {
 }
 
 .quantity-btn {
-    background-color: #a96c43;
+    background-color: var(--button-bg);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -105,14 +138,16 @@ body {
 }
 
 .quantity-btn:hover {
-    background-color: #fc894f;
+    background-color: var(--button-hover-bg);
     transform: scale(1.05);
 }
 
 .quantity-input {
     width: 40px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid var(--input-border);
+    background-color: var(--cart-bg);
+    color: var(--text-color);
     border-radius: 5px;
     padding: 5px;
 }
@@ -120,14 +155,14 @@ body {
 .remove-btn {
     background: transparent;
     border: none;
-    color: #a96c43;
+    color: var(--remove-btn);
     font-size: 1.5rem;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .remove-btn:hover {
-    color: #fc894f;
+    color: var(--remove-hover);
 }
 
 hr {
@@ -153,12 +188,13 @@ hr {
     display: block;
     width: 100%;
     padding: 10px 20px;
-    background-color: #a96c43;
+    background-color: var(--button-bg);
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
     font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
     margin-top: 20px;
     text-align: center;
@@ -166,6 +202,51 @@ hr {
 }
 
 .checkout-btn:hover {
-    background-color: #fc894f;
+    background-color: var(--button-hover-bg);
     transform: scale(1.05);
+}
+
+.theme-toggle {
+    position: relative;
+    top: 2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    left: 15px;
+}
+
+.theme-toggle input {
+    display: none;
+}
+
+/* Estilo del fondo del switch */
+.theme-toggle label {
+    width: 50px;
+    height: 25px;
+    background: #a96c43; 
+    border-radius: 25px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+/* Elemento deslizante (la bolita) */
+.theme-toggle .bolita {
+    width: 20px;
+    height: 20px;
+    background: rgb(3, 3, 3);
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Cuando el checkbox está activado */
+.theme-toggle input:checked + label {
+    background: #6e6e6e; 
+}
+
+.theme-toggle input:checked + label .bolita {
+    transform: translateX(25px); 
+    background: #ffcc00; 
 }

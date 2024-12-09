@@ -1,8 +1,37 @@
 *{
     margin: 0;
 }
+:root {
+    --bg-color: rgb(252, 249, 242);
+    --card-bg: #fbeed8;
+    --form-bg: white;
+    --text-color: #333;
+    --title-color: #a96c43;
+    --button-bg: #a96c43;
+    --button-hover-bg: #fc894f;
+}
+
+/* Modo oscuro */
+body:has(#dark-mode-toggle:checked) {
+    --bg-color: #2b2b2b;
+    --card-bg: rgb(111, 76, 54);
+    --form-bg: #444444;
+    --text-color: #e0e0e0;
+    --title-color: #d28b5e;
+    --button-bg: #4e3c32;
+    --button-hover-bg: #d28b5e;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
-    background-color: rgb(252, 249, 242);
+    background-color: var(--bg-color);
     width: 100%;
 }
 
@@ -12,30 +41,66 @@
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 20px;
+    position: relative;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.form {
     display: flex;
-    justify-content: space-evenly;
-    border: solid 2px black;
+    justify-content: space-around;
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: bold;
+    color: var(--title-color);
 }
 .tarjetas{
-    padding: 0;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--form-bg);
 }
 .tarjetas img {
-    width: 20px;
-    height: 15px;
+    width: 24px;
+    height: 17px;
     margin: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 label  h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin: 3% ;
+    margin-left: 5px;
+}
+#page {
+    margin-bottom: 5px;
 }
 #formcheck input {
     margin: 0.6rem;
+    margin-left: 2px;
 }
+.checkout-btn {
+    align-self: center;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    position:static;
+    bottom: 15px;
+}
+
+.checkout-btn:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+} 

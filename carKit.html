@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="./css/carkit.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/carkit.css">
     <title>Carkit</title>
 </head>
 <body>
@@ -22,12 +23,15 @@
                     <a href="login.html">
                         <i class="fa-solid fa-user fa-2x"></i>
                     </a>
-                    <a href="shopping.html">
+                    <a href="carKit.html">
                         <i class="fa-solid fa-cart-shopping fa-2x"></i>
                     </a>
-                    <a href="setting.html">
-                        <i class="fa-solid fa-gear fa-2x"></i>
-                    </a>
+                    <div class="theme-toggle">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <label for="dark-mode-toggle">
+                            <div class="bolita"></div>
+                        </label>
+                    </div>                    
                 </div>
             </div>
         </header>
@@ -35,10 +39,12 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="aboutUs.html">Quienes Somos</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
                 <li><a href="product.html">Productos</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
+
         <div class="cart-box">
             <h1>Carrito de Compras</h1>
             <div class="cart-item">
@@ -75,7 +81,7 @@
                 <h3>Total:</h3>
                 <span class="total-price">$55.00</span>
             </div>
-            <button class="checkout-btn">Finalizar Compra</button>
+            <a href="CheckOut.html" class="checkout-btn">Finalizar Compra</a>
         </div>
         <footer>
             <h3>Sobre Nosotros</h3>
