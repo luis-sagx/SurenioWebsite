@@ -1,4 +1,3 @@
-
 :root {
     --bg-color: linear-gradient(214deg, rgb(87, 63, 44) 0%, rgb(224, 155, 75) 50%, rgb(87, 66, 41) 100%);
     --form-bg: #fff7d5;
@@ -16,7 +15,7 @@ body:has(#dark-mode-toggle:checked) {
     --form-bg: rgb(82, 56, 40);
     --input-border: #d28b5e;
     --title-color: #d28b5e;
-    --button-bg: #4e3c32;
+    --button-bg: #76523f;
     --button-hover-bg: #d28b5e;
     --text-color: #e0e0e0;
     --span-color: #b0b0b0;
@@ -34,9 +33,9 @@ body:has(#dark-mode-toggle:checked) {
 
 .form-box {
     width: 430px;
-    height: 505px;
+    height: 510px;
     position: relative;
-    margin: 6% auto;
+    margin: 6% auto 5% auto;
     background-color: var(--form-bg);
     padding: 5px;
     border-radius: 10px;
